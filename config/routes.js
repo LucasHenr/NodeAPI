@@ -16,8 +16,8 @@ module.exports = function(server) {
   const book_instanceService = require('../itens/book_instanceService');
 
   itemService.register(router, '/genre');
-  itemService.register(router, '/author');
-  itemService.register(router, '/book');
-  itemService.register(router, '/book_instance');
+  authorService.register(router, '/author');
+  bookService.register(router, '/book');
+  book_instanceService.register(router, '/book_instance');
 
 }
